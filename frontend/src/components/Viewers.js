@@ -2,7 +2,7 @@ import React, { startTransition, useEffect, useState } from "react"
 import { Button } from "@mui/material"
 import JsxParser from "react-jsx-parser"
 import { useParams } from "react-router-dom"
-import "./Viewer.css"
+// import "./Viewer.css"
 import app_config from "./config"
 const Viewers = () => {
   // copy code button end

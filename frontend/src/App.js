@@ -2,12 +2,13 @@ import './App.css';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import AddComponent from './components/AddComponent';
-import Viewers from './component/Viewers';
+import Viewers from './components/Viewers';
 import { Toaster } from 'react-hot-toast';
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Header from './components/Header';
 import Browse from './components/Browse';
 import Authorisor from './components/Authorisor';
+import ComponentManager from './components/ManageComponents';
 function App() {
   return (
     <div>
@@ -19,8 +20,9 @@ function App() {
           <Route element={<Login />} path='login' />
           <Route element={<Signup />} path='signup' />
           <Route element={<AddComponent />} path='add' />
-          <Route element={<Viewers />} path='view' />
+          <Route element={<Viewers />} path='viewer/:id' />
           <Route element={<Browse />} path='browse' />
+          <Route element={<ComponentManager />} path='managecomponent' />
           <Route element={<Authorisor />} path='authoriser' />
         </Routes>
 

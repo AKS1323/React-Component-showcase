@@ -148,9 +148,9 @@ const AddComponent = () => {
                     />
                   </div>
 
-                  <label>Select Image </label>
+                  <label htmlFor="image" className="btn btn-dark">Select Image </label>
                   <br />
-                  <input onChange={uploadThumbnail} type="file" />
+                  <input hidden id="image"  onChange={uploadThumbnail} type="file" />
                   <br />
                   <br />
                   <button
