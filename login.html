@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        .mycard{
+            border: 1px solid red;
+            width:25%;
+            padding:40px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.564);
+            background-color: aliceblue;
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            /* linear-gradient and radial gradiant */
+            /* background-image: url("logo.png"); */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: linear-gradient(#ff000052,#00800076,#0000007b) ,url("logo.png");
+
+        }
+        .myinput{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 5px 10px;
+            margin-bottom: 20px;
+            border: 1px solid gray;
+           
+        }
+        .myinput:focus{
+            background-color: #a52a2aa1;
+            outline: brown;
+
+        }
+        .mylink:visited{
+            background-color: #a52a2a4f;
+        }
+        .card-title{
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            text-shadow:2px 2px ;
+            border-left: 2px solid brown;
+        }
+        .mybtn{
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: brown;
+            color: antiquewhite;
+            font-weight: bold;
+            border: 3px solid rgba(128, 0, 128, 0.58);
+            margin-bottom: 20px;
+            transition-duration: 0.3s;
+        }
+        .mybtn:hover{
+
+            background-color:#a52a2aa4 ;
+            color: black;
+            outline: 1px solid brown;
+        }
+        .mylink{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+        .logo{
+            width: 70px;
+            display: block;
+            margin: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="mycard">
+        <img class="logo" src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3Bvb3J2aWthLW1vYmlsZXMuanBn.webp" >
+        <p class="card-title">Login to Continue</p>
+        
+        
+        <input type="text" class="myinput" placeholder="Email">
+    
+        <input type="password" class="myinput" placeholder="Password">
+        <button href="homee.html" class=" btn btn-danger btn-sm
+        float-right">Login</button>
+
+        <a href="sign.html" class="mylink">Forget Password</a>
+    </div>
+                  
+</body>
+</html>
