@@ -9,6 +9,8 @@ import Header from './components/Header';
 import Browse from './components/Browse';
 import Authorisor from './components/Authorisor';
 import ComponentManager from './components/ManageComponents';
+import Auth from '../auth.js';
+
 function App() {
   return (
     <div>
@@ -19,7 +21,7 @@ function App() {
           <Route element={<Navigate to="/login" />} path='/' />
           <Route element={<Login />} path='login' />
           <Route element={<Signup />} path='signup' />
-          <Route element={<AddComponent />} path='add' />
+          <Route element={<Auth><AddComponent /></Auth>} path='add' />
           <Route element={<Viewers />} path='viewer/:id' />
           <Route element={<Browse />} path='browse' />
           <Route element={<ComponentManager />} path='managecomponent' />
